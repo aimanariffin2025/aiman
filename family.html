@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - Muhammad Aiman</title>
+    <link rel="stylesheet" href="cssass.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header class="main-header" id="top-of-page">
+    
+    <div class="header-info">
+        <h2>MUHAMMAD AIMAN</h2>
+        <p>STUDENT</p>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="indexx.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html" class="active-link">Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    
+    <div class="header-clock">
+        <p id="datetime">Loading...</p>
+    </div>
+
+</header>
+
+<div class="main-content-top-nav">
+
+    <div class="page-container">
+
+        <h1>MY FAMILY</h1>
+
+        <h2 class="exp-h2-float-family">FAMILY TREE</h2><br>
+        <p class="section-caption">
+           My family structure. A visual representation of the people who shaped me into who I am today
+        </p>
+
+        <div class="tree-level">
+            <div class="tree-node father-node">
+                <img src="images/ayah.jpg" alt="Father" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Ariffin</h3>
+                    <p class="role birthday">5 September</p>
+                    <p class="role">Father</p>
+                </div>
+            </div>
+
+            <div class="tree-connector-horizontal"></div>
+
+            <div class="tree-node mother-node">
+                <img src="images/mak.jpg" alt="Mother" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Siti Hajar</h3>
+                    <p class="role birthday">23 March</p>
+                    <p class="role">Mother</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tree-vertical-line"></div>
+
+        <div class="tree-level children-row">
+            
+            <div class="tree-node child-node aliff-node">
+                <img src="images/aiman1000.jpg" alt="Sibling 1" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Muhammad <br> Aiman</h3>
+                    <p class="role birthday">25 December</p>
+                    <p class="role">Eldest (Me)</p>
+                </div>
+            </div>
+
+            <div class="tree-node child-node aliff-node">
+                <img src="images/aliff.jpg" alt="Sibling 2" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Muhammad <br> Aliff</h3>
+                    <p class="role birthday">11 March</p>
+                    <p class="role">2nd Child (Brother)</p>
+                </div>
+            </div>
+
+            <div class="tree-node child-node aisyah-node">
+                <img src="images/aisah.jpg" alt="Sibling 3" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Nur Aisyah <br> Sofia</h3>
+                    <p class="role birthday">21 July</p>
+                    <p class="role">3rd Child (Sister)</p>
+                </div>
+            </div>
+
+            <div class="tree-node child-node affan-node">
+                <img src="images/affan.jpg" alt="Sibling 4" class="tree-photo">
+                <div class="tree-info">
+                    <h3>Muhammad <br> Affan</h3>
+                    <p class="role birthday">1 May</p>
+                    <p class="role">Youngest Son (Brother)</p>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="edu-separator"> 
+            <h2 class="exp-h2-float-family">FAMILY ALBUM</h2><br>
+        <p class="section-caption">
+           My family structure. A visual representation of the people who shaped me into who I am today
+        </p>
+            <div class="album-photo-grid">
+                
+                <div class="album-item">
+                    <img src="images/family.jpg" alt="Hari Raya Photo" class="album-photo">
+                    <div class="album-caption">Hari Raya Photo</div>
+                </div>
+
+                <div class="album-item">
+                    <img src="images/family2.jpg" alt="Family Trip to Genting Highland" class="album-photo">
+                    <div class="album-caption">Family Trip to Genting Highland</div>
+                </div>
+
+                <div class="album-item">
+                    <img src="images/family3.jpg" alt="Wedding Event with Family" class="album-photo">
+                    <div class="album-caption">Wedding Event</div>
+                </div>
+                
+                <div class="album-item">
+                    <img src="images/family4.jpg" alt="Eating with Family" class="album-photo">
+                    <div class="album-caption">Eating Together</div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="minimal-full-width-footer">
+    <div class="footer-text-content">
+        <p class="footer-copyright-final">
+            © 2025 Muhammad Aiman Bin Ariffin. All rights reserved.
+        </p>
+        <p class="footer-creation-date">
+            Website created on 15/12/2025 | Last updated on 17/12/2025
+        </p>
+    </div>
+</footer>
+
+<button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+</div>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    
+    // Options for full day and date format
+    const dayOptions = { weekday: 'long' };
+    const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+
+    // Get formatted parts
+    const day = now.toLocaleDateString('en-US', dayOptions);
+    const date = now.toLocaleDateString('en-US', dateOptions);
+    const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+    // Combine into the required format: Bold Day, Date, then Time on a new line
+    document.getElementById('datetime').innerHTML = 
+        `<b>${day}, ${date}</b><br>${time}`; 
+}
+
+// Call the function initially and then every second
+updateClock();
+setInterval(updateClock, 1000);
+
+
+// ======================================================
+// NEW: Unified Modal Functionality for Image Pop-up
+// ======================================================
+
+function showModal(imageSrc, captionText) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const caption = document.getElementById('modalCaption');
+    
+    // Set the image source and caption text
+    modalImg.src = imageSrc;
+    caption.innerHTML = captionText || "Family Photo"; // Default caption
+    
+    // Display the modal using flex for centering (as defined in your CSS)
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden"; // Hide scrollbar
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = "none";
+    document.body.style.overflow = "auto"; // Restore scrollbar
+}
+
+// Attach event listeners to all album items
+var items = document.getElementsByClassName("album-item");
+
+for (let i = 0; i < items.length; i++) {
+    items[i].onclick = function(event) {
+        event.preventDefault(); // Prevent any default action
+        
+        // Get image source and caption from the item
+        var imageElement = this.querySelector('.album-photo');
+        var captionElement = this.querySelector('.album-caption');
+
+        var imageSrc = imageElement.src;
+        var captionText = captionElement ? captionElement.textContent : "Family Photo";
+
+        showModal(imageSrc, captionText);
+    };
+}
+
+// Close the modal when the user presses the ESC key (Good practice)
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
+
+    /* ---------------------------------------------------- */
+/* 3. BACK TO TOP FUNCTION */
+/* ---------------------------------------------------- */
+
+// Get the button
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 200px from the top, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    // Smooth scroll for modern browsers
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+</script>
+
+</body>
+</html>
